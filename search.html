@@ -5,13 +5,12 @@
 </head>
 <body>
 <label>Search</label>
-<input value="search" var="search" width="7" height="4">
+<input value=search var="search" width="7" height="4">
 <button onClick="searching();" width="7" height="4">Search</button>
 <script type="text/javascript">
-searching();
 function searching() {
-  document.getElementById("title").innerHTML = ("Search results for " + search + " | PersonalFunDictonary");
-  location.search = ("?q=" + search);
+  document.getElementById("title").innerHTML = ("Search results for " + search + " | PersonalFunDictonary")
+  location.search = ("?q=" + search)
 }
 </script>
 </body>
