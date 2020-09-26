@@ -5,6 +5,7 @@
 </head>
 <body>
 <script>
-document.getElementById("title").innerHTML("Search results for " + search + " | PersonalFunDictonary")
+document.getElementById("title").innerHTML = ("Search results for " + search + " | PersonalFunDictonary");
+location.search = ("?q=" + search);
 </script>
-</body
+</body>
