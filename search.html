@@ -6,9 +6,12 @@
 <body>
 <label>Search</label>
 <input value="search" var="search" width="7" height="4">
-<button onClick="location.search = ('/search?q=' + search);" width="7" height="4">Search</button>
+<button onClick="search();" width="7" height="4">Search</button>
 <script>
-document.getElementById("title").innerHTML = ("Search results for " + search + " | PersonalFunDictonary");
-location.search = ("search?q=" + search);
+search();
+function search() {
+  document.getElementById("title").innerHTML = ("Search results for " + search + " | PersonalFunDictonary");
+  location.search = ("search?q=" + search);
+}
 </script>
 </body>
