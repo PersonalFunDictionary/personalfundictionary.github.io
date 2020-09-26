@@ -4,6 +4,9 @@
 <title id="title"></title>
 </head>
 <body>
+<label>Search</label>
+<input value="search" var="search" width="7" height="4">
+<button onClick="location.search = ('/search?q=' + search);" width="7" height="4">Search</button>
 <script>
 document.getElementById("title").innerHTML = ("Search results for " + search + " | PersonalFunDictonary");
 location.search = ("search?q=" + search);
